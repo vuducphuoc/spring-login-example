@@ -37,7 +37,7 @@ public class AuthController {
     @Autowired
     private AuthService authService;
 
-    @PostMapping("/login")
+    @GetMapping("/login")
 //    @ApiParam(value = "Basic Base64(user:password)")
     public ResponseEntity<?> authenticateUser(
             @RequestHeader(value = "Authorization") String authCredentials) {
